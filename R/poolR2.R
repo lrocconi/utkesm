@@ -1,9 +1,11 @@
 #' Pool R-square
 #'
-#' @param x
+#' @param x Model object created in R
 #'
-#' @return
+#' @return Returns the summary statistics for R-squared and adjusted R-squared
 #' @export
+#'
+#' @description Returns summary statistics for R-squared and adjusted R-squared for a specified model
 #'
 #' @examples
 poolR2 <- function(x){
