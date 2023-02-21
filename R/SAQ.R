@@ -29,9 +29,6 @@
 #'   \item{Question_21}{I wake up under my duvet thinking that I am trapped under a normal distribution.}
 #'   \item{Question_22}{My friends are better at SPSS than I am.}
 #'   \item{Question_23}{If I am good at statistics people will think I am a nerd.}
-#' }
-#' @references{
-#'   \insertRef{raudenbush2002}{mlmhelpr}
-#' }
+#'   }
 #' @source \url{https://stats.oarc.ucla.edu/other/hlm/hlm-mlm/introduction-to-multilevel-modeling-using-hlm/}
 "hsb"
