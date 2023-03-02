@@ -4,7 +4,7 @@
 #'
 #' **Note:** This dataset was imported from an SPSS .sav file using `haven` and therefore has variable attributes attached.
 #'
-#' @format A data frame with XXX rows and 23 variables:
+#' @format A data frame with 2571 rows and 23 variables:
 #' \describe{
 #'   \item{Question_01}{Statistics make me cry.}
 #'   \item{Question_02}{My friends will think I am stupid for not being able to cope with SPSS.}
