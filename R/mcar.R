@@ -12,6 +12,8 @@
 #' @export
 #'
 #' @examples
+#' mcar(dat)
+#'
 mcar <- function(x){
   if(!require(norm)) {
     stop("You must have norm installed to use LittleMCAR")

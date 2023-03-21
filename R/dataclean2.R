@@ -55,4 +55,4 @@
 #'   \item{hdginten}{hard drugs intensity (over indulgence)}
 #' }
 #' @source \url{https://stats.oarc.ucla.edu/other/hlm/hlm-mlm/introduction-to-multilevel-modeling-using-hlm/}
-"hsb"
+

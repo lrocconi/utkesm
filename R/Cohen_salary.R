@@ -6,12 +6,11 @@
 #'
 #' @format A data frame with 62 rows and 6 variables:
 #' \describe{
-#'   \item{id}{id}
+#'   \item{id}{id variable}
 #'   \item{time}{time since earning PhD}
 #'   \item{pub}{number of publications}
-#'   \item{female}{sex (1 = female, 0 = male)}
+#'   \item{female}{biological sex (1 = female, 0 = male)}
 #'   \item{citation}{number of citations}
-#'   \item{salary}{salary}
+#'   \item{salary}{salary in US dollars}
 #' }
-#' @source \url{https://stats.oarc.ucla.edu/other/hlm/hlm-mlm/introduction-to-multilevel-modeling-using-hlm/}
-"hsb"
+#' @source Cohen, Cohen, Aiken, & West (2002) Applied Multiple Regression Analysis for the Behavioral Sciences

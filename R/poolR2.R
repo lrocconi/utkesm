@@ -1,13 +1,16 @@
 #' Pool R-square
 #'
-#' @param x Model object created in R
+#' @param x An imputation model object produced by `mice::mice`
 #'
-#' @return Returns the summary statistics for R-squared and adjusted R-squared
+#' @return Returns the summary statistics (i.e., average, median, minimum, maximum) for R-square and adjusted R-square across all imputations
 #' @export
 #'
-#' @description Returns summary statistics for R-squared and adjusted R-squared for a specified model
+#' @description Returns summary statistics for R-square and adjusted R-squared for a specified model
 #'
 #' @examples
+#'
+#' poolR2(imp1)
+#'
 poolR2 <- function(x){
 
   n <- x$call1[[3]]

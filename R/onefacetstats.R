@@ -1,23 +1,3 @@
-# Two reliability-like coefficients are produced: Generalizability coefficient
-# and a Dependability Coefficient. The Generalizability coefficient is useful
-# when making relative decisions such as rank-ordering subjects. The
-# Dependability coefficient is useful when making absolute decision such as a
-# subjects standing on a construct (e.g., a score of 109 on an IQ test) or when
-# a subject must achieve a particular standard (e.g., a pass/fail exam, licensure
-# exam).
-
-# Notice that these results print the Generalizability Coefficient, relative
-# error variance, Dependability Coefficient and absolute error coefficient.
-# Using the formulas presented in Huebner & Lucht (2019), you can compute the
-# dependability and generalizability coefficient for different number of items.
-
-# The following function uses the formulas presented in Huebner & Lucht (2019)
-# to create a table and plot of the dependability and generalizability
-# coefficients for various item types for a one facet design (note this will not
-# work for two facet designs, there is a separate function for that)
-
-# You need to give the function the number of items you are interested in (it
-# defaults to presenting 1 through 10) and the object from your gstudycall
 #' One Facet Statistics
 #'
 #' @param items Number of items (defaults to presenting 1-10 items if not otherwise specified)
@@ -27,9 +7,9 @@
 #' @return Returns printed results and plot containing the generalizability coefficient, relative error variance, dependability coefficient, and absolute error variance.
 #' @export
 #'
-#' @description # The following function uses the formulas presented in Huebner & Lucht (2019) to create a table and plot of the dependability and generalizability coefficients for various item types for a one facet design (note this will not work for two facet designs, there is a separate function for that)
+#' @description The following function uses the formulas presented in Huebner & Lucht (2019) to create a table and plot of the dependability and generalizability coefficients for various item types for a one facet design (note this will not work for two facet designs, there is a separate function for that)
 #'
-#' @note # Two reliability-like coefficients are produced: Generalizability coefficient and a Dependability Coefficient. The Generalizability coefficient is useful when making relative decisions such as rank-ordering subjects. The Dependability coefficient is useful when making absolute decision such as a subjects standing on a construct (e.g., a score of 109 on an IQ test) or when a subject must achieve a particular standard (e.g., a pass/fail exam, licensure exam).
+#' @note Two reliability-like coefficients are produced: Generalizability coefficient and a Dependability Coefficient. The Generalizability coefficient is useful when making relative decisions such as rank-ordering subjects. The Dependability coefficient is useful when making absolute decision such as a subjects standing on a construct (e.g., a score of 109 on an IQ test) or when a subject must achieve a particular standard (e.g., a pass/fail exam, licensure exam).
 #'
 #' @examples
 onefacet.stats <- function(items=c(1:10), gstudy, round=2) {

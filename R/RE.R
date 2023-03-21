@@ -12,6 +12,8 @@
 #' @note The close to 1 the better. It’s based on the fraction of missing information and the number of imputation, so the larger the amount of missing data, the greater number of imputation needed. RE = 1/(1+(FMI/m)).
 #'
 #' @examples
+#' RE(model)
+#'
 RE <- function(x) {
 
   fmi <- x$pooled[,11]
