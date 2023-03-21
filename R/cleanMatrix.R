@@ -1,4 +1,4 @@
-#' Clean Matrix
+#' Drop Matrix
 #'
 #' @param matrix Full matrix to be cleaned
 #' @param vars Variables to add/remove from matrix
@@ -10,6 +10,8 @@
 #'
 #'
 #' @examples
+#' dropMatrix(matrix, c("var1", "var2"))
+#'
 dropMatrix <- function(matrix, vars) {
   remove <- vars
   dropC <- colnames(matrix) %in% remove #removes from columns
