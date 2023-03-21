@@ -12,6 +12,8 @@
 #' @note Two reliability-like coefficients are produced: Generalizability coefficient and a Dependability Coefficient. The Generalizability coefficient is useful when making relative decisions such as rank-ordering subjects. The Dependability coefficient is useful when making absolute decision such as a subjects standing on a construct (e.g., a score of 109 on an IQ test) or when a subject must achieve a particular standard (e.g., a pass/fail exam, licensure exam).
 #'
 #' @examples
+#' onefacet.stats(items=1:25, gstudy=g.compFear)
+#'
 onefacet.stats <- function(items=c(1:10), gstudy, round=2) {
   n_i <- items
   #relative error variance
@@ -29,10 +31,10 @@ onefacet.stats <- function(items=c(1:10), gstudy, round=2) {
   dep.coef<-round(dep_coef,round)
   #plot results
   plot(items, dep_coef, type="o", col="blue", pch=68, ylim=c(0,1))
-  par(new=TRUE)
+  graphics::par(new=TRUE)
   plot(items, gen_coef, type="o", col="red", pch=71, axes = F)
   #view a table of results
   rbind(rel.err.var, abs.err.var,gen.coef,dep.coef)
 }
 
-#onefacet.stats(items=1:25, gstudy=g.compFear)
+

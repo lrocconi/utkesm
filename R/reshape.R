@@ -9,6 +9,7 @@
 #' @export
 #'
 #' @examples
+#' reshape(data)
 reshape <- function(data) {
   data2 <- as.data.frame(data) #declare data as data frame
   data2$person <- seq.int(nrow(data2)) #creating a person ID

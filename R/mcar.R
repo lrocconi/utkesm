@@ -16,12 +16,8 @@
 #'
 mcar <- function(x){
   if(!require(norm)) {
-    stop("You must have norm installed to use LittleMCAR")
+    stop("You must have norm installed to use Little's MCAR test")
   }
-
-  # if(!require(data.table)) {
-  # 	stop("Please install the R-package data.table to use mcar")
-  # }
 
   if(!(is.matrix(x) | is.data.frame(x))) {
     stop("Data should be a matrix or dataframe")
@@ -52,9 +48,9 @@ mcar <- function(x){
   p <- n.mis.pat-1 # number of Missing Data patterns minus 1 (complete data row)
 
 
-  s <- prelim.norm(x)
-  ll <- em.norm(s)
-  fit <- getparam.norm(s = s, theta = ll)
+  s <- norm::prelim.norm(x)
+  ll <- norm::em.norm(s)
+  fit <- norm::getparam.norm(s = s, theta = ll)
 
   # gmean<-mlest(x)$muhat #ML estimate of grand mean (assumes Normal dist)
   gmean <- fit$mu
@@ -103,7 +99,7 @@ mcar <- function(x){
   }
 
   #p-value for chi-square
-  p.value<-1-pchisq(d2,df)
+  p.value<-1-stats::pchisq(d2,df)
 
   #descriptives of missing data
   amount.missing <- matrix(nmis, 1, length(nmis))
