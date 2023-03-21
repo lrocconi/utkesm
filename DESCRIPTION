@@ -1,6 +1,6 @@
 Package: utkesm
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: R Package for The University of Tennessee's Evaluation, Statistics, and Methodology program
+Version: 0.0.1
 Authors@R: 
     c(person(given = "Louis",
              family = "Rocconi",
@@ -11,7 +11,10 @@ Authors@R:
              family = "Lynch",
              role = "ctb",
              email = "xlynch@vols.utk.edu"))
-Description: R functions and data to be used with courses that are part of The University of Tennessee's Evaluation, Statistics, and Methodology program.
+Description: A collection of functions and data to be used with courses that are part of The University of Tennessee's Evaluation, Statistics, and Methodology program.
+License: MIT + file LICENSE
+URL: https://github.com/lrocconi/utkesm
+BugReports: https://github.com/lrocconi/utkesm/issues
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
