@@ -10,6 +10,7 @@
 #'
 #'
 #' @examples
+#' keepMatrix(matrix, c("var1", "var2"))
 #'
 keepMatrix <- function(matrix, vars) {
   keep <- vars

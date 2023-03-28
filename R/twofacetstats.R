@@ -11,6 +11,8 @@
 #' @description Function to calculate Generalizability and Dependability Coefficients for different numbers of designs
 #'
 #' @examples
+#' twofacet.stats(n_i=1, n_o=1, gstudy, round=2)
+#'
 twofacet.stats <- function(n_i=1, n_o=1, gstudy, round=2) {
   #relative error variance
   rel_err_var <- gstudy$components[1,2]/n_i+gstudy$components[2,2]/n_o +gstudy$components[7,2]/(n_i*n_o)
