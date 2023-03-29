@@ -30,5 +30,3 @@
 #'   \item{Question_22}{My friends are better at SPSS than I am.}
 #'   \item{Question_23}{If I am good at statistics people will think I am a nerd.}
 #'   }
-#' @source \url{https://stats.oarc.ucla.edu/other/hlm/hlm-mlm/introduction-to-multilevel-modeling-using-hlm/}
-

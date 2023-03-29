@@ -38,5 +38,3 @@
 #'   \item{tgas}{Total Generalized Anxiety}
 #'   \item{alcfreq}{Alcohol Quantity * Frequency}
 #' }
-#' @source \url{https://stats.oarc.ucla.edu/other/hlm/hlm-mlm/introduction-to-multilevel-modeling-using-hlm/}
-"hsb"

@@ -10,5 +10,3 @@
 #'   \item{x}{practice time in minutes}
 #'   \item{y}{number of correct responses}
 #' }
-#' @source \url{https://stats.oarc.ucla.edu/other/hlm/hlm-mlm/introduction-to-multilevel-modeling-using-hlm/}
-"hsb"

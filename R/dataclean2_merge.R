@@ -10,5 +10,3 @@
 #'   \item{lc}{learning community indicator (1=yes, 0 = no)}
 #'   \item{lc_type}{housing situation}
 #' }
-#' @source \url{https://stats.oarc.ucla.edu/other/hlm/hlm-mlm/introduction-to-multilevel-modeling-using-hlm/}
-"hsb"

@@ -27,3 +27,4 @@ mcci <- function(b1, se1, b2, se2, seed = 1234, digits = 4) {
   return(round(CI, digits))
 
 }
+"mcci"

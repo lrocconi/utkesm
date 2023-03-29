@@ -36,5 +36,5 @@ onefacet.stats <- function(items=c(1:10), gstudy, round=2) {
   #view a table of results
   rbind(rel.err.var, abs.err.var,gen.coef,dep.coef)
 }
-
+"onefacestats"
 

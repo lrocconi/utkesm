@@ -163,6 +163,4 @@
 #'   \item{IRrace}{Institution-reported: Race or ethnicity}
 #'   \item{IRftfy}{Institution reported first-time first-year student}
 #' }
-#' @source \url{https://stats.oarc.ucla.edu/other/hlm/hlm-mlm/introduction-to-multilevel-modeling-using-hlm/}
-"hsb"
 

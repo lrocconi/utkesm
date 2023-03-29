@@ -16,4 +16,4 @@ theta <- function(theta, params) {
   items$z <- (exp((1.702*items$a)*(theta-items$b))/(1+exp((1.702*items$a)*(theta-items$b))))
   items
 }
-
+"theta"

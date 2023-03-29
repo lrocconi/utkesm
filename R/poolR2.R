@@ -41,3 +41,4 @@ poolR2 <- function(x){
   return(returnlist)
 
 }
+"poolR2"

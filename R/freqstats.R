@@ -31,3 +31,4 @@ stats <- function(x) {
 
 #has counts including missing and proportions including missing
 #feed dataframe
+"freqstats"

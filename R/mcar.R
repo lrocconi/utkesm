@@ -115,3 +115,4 @@ mcar <- function(x){
        amount.missing = amount.missing,
        data = datasets)
 }
+"mcar"

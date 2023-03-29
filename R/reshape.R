@@ -15,3 +15,4 @@ reshape <- function(data) {
   data2$person <- seq.int(nrow(data2)) #creating a person ID
   data2.long <- reshape2::melt(data2, id.vars = "person", variable.name = "item", value.name="score") #melt function from reshape2
 }
+"reshape"

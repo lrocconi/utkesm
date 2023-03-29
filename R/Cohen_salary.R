@@ -13,4 +13,3 @@
 #'   \item{citation}{number of citations}
 #'   \item{salary}{salary in US dollars}
 #' }
-#' @source Cohen, Cohen, Aiken, & West (2002) Applied Multiple Regression Analysis for the Behavioral Sciences

@@ -12,5 +12,4 @@
 #'   \item{mathach}{standardized scale of mathmatics achievement}
 #'   \item{catholic}{school sector (catholic = 1, public = 0)}
 #' }
-#' @source \url{https://stats.oarc.ucla.edu/other/hlm/hlm-mlm/introduction-to-multilevel-modeling-using-hlm/}
-"hsb"
+

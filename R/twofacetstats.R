@@ -41,3 +41,4 @@ twofacet.stats <- function(n_i=1, n_o=1, gstudy, round=2) {
 
 # 3 writing prompts and 3 raters
 #twofacet.stats(4, 3, gstudy=g.writing)
+"twofacestats"

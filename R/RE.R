@@ -22,3 +22,4 @@ RE <- function(x) {
   dat$re <- (1/(1+(dat$fmi/x$m)))
   print(dat[,c(1,3)])
 }
+"RE"

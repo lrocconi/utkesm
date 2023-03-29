@@ -14,5 +14,3 @@
 #'   \item{job}{measure of job satisfaction}
 #'   \item{commit}{teacher’s commitment to the profession}
 #' }
-#' @source \url{https://stats.oarc.ucla.edu/other/hlm/hlm-mlm/introduction-to-multilevel-modeling-using-hlm/}
-"hsb"

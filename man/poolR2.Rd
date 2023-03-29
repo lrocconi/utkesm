@@ -7,8 +7,16 @@
 poolR2(x)
 }
 \arguments{
-\item{x}{}
+\item{x}{An imputation model object produced by \code{mice::mice}}
+}
+\value{
+Returns the summary statistics (i.e., average, median, minimum, maximum) for R-square and adjusted R-square across all imputations
 }
 \description{
-Pool R-square
+Returns summary statistics for R-square and adjusted R-squared for a specified model
+}
+\examples{
+
+poolR2(imp1)
+
 }

@@ -18,3 +18,4 @@ freq2 <- function(x) {
     return(dat)
   })
 }
+"freqstats2"

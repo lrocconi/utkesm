@@ -19,3 +19,4 @@ keepMatrix <- function(matrix, vars) {
 
   matrix[keepR,keepC]
 }
+"cleanMatrix2"

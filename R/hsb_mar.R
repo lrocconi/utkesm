@@ -18,5 +18,3 @@
 #'   \item{science}{science score}
 #'   \item{socst}{social studies score}
 #' }
-#' @source \url{https://stats.oarc.ucla.edu/other/hlm/hlm-mlm/introduction-to-multilevel-modeling-using-hlm/}
-"hsb"

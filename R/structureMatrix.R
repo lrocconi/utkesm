@@ -26,3 +26,4 @@ structureMatrix <- function(x, cut = .32) {
   return(y)
 
 }
+"structureMatrix"
