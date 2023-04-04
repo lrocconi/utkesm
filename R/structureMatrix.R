@@ -1,7 +1,7 @@
 #' Structure Maxtrix
 #'
 #' @param x An object produced using the `psych::fa` function.
-#' @param cut
+#' @param cut Do not display loadings less than this value; defaults to .32.
 #'
 #' @return A matrix containing
 #' @export

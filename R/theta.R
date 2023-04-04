@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' theta(0, rasch.params$items) #with a latent ability of 0 or higher you'd have a 96% chance of answering V1 correctly
+#' theta(0, rasch.params$items)
 theta <- function(theta, params) {
   items <- as.data.frame(params)
   items$z <- (exp((1.702*items$a)*(theta-items$b))/(1+exp((1.702*items$a)*(theta-items$b))))

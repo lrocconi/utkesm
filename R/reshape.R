@@ -10,9 +10,10 @@
 #'
 #' @examples
 #' reshape(data)
-reshape <- function(data) {
+wide2long <- function(data) {
   data2 <- as.data.frame(data) #declare data as data frame
   data2$person <- seq.int(nrow(data2)) #creating a person ID
   data2.long <- reshape2::melt(data2, id.vars = "person", variable.name = "item", value.name="score") #melt function from reshape2
-}
-"reshape"
+#stats::reshape function
+  }
+"wide2long"
