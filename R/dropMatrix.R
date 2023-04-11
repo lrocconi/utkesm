@@ -19,4 +19,4 @@ dropMatrix <- function(matrix, vars) {
 
   matrix[!dropR,!dropC]
 }
-"cleanMatrix"
+"dropMatrix"
