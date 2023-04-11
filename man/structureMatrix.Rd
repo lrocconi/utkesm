@@ -9,7 +9,7 @@ structureMatrix(x, cut = 0.32)
 \arguments{
 \item{x}{An object produced using the \code{psych::fa} function.}
 
-\item{cut}{}
+\item{cut}{Do not display loadings less than this value; defaults to .32.}
 }
 \value{
 A matrix containing
