@@ -8,11 +8,11 @@ freq <- function(x) {
 stats <- function(x) {
   lapply(x, function(x) {
 
-    if (is.numeric(x)) return(as.data.frame(cbind(min = min(x, na.rm = TRUE),
+    if (is.numeric(x)) return(as.data.frame(cbind(min = base::min(x, na.rm = TRUE),
                                                   pt25 = stats::quantile(x, probs = .25, na.rm = TRUE)[[1]],
                                                   pt50 = stats::median(x, na.rm = TRUE),
                                                   pt75 = stats::quantile(x, probs = .75, na.rm = TRUE)[[1]],
-                                                  max = stats::max(x, na.rm = TRUE),
+                                                  max = base::max(x, na.rm = TRUE),
                                                   mean = round(mean(x, na.rm = TRUE),3),
                                                   sd = round(stats::sd(x, na.rm = TRUE),3),
                                                   "<NA>" = sum(is.na(x))
