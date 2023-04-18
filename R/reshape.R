@@ -9,7 +9,8 @@
 #' @export
 #'
 #' @examples
-#' reshape(data)
+#' wide2long(data)
+#'
 wide2long <- function(data) {
   # Check whether reshape2 package is installed
   if(!requireNamespace("reshape2")) {

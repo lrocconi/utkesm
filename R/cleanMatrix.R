@@ -11,7 +11,7 @@
 #'
 #' @examples
 #' data("iris")
-#' cor_matrix <- cor(iris[,[-5]])
+#' cor_matrix <- cor(iris[,-5])
 #' dropMatrix(cor_matrix, c("var1", "var2"))
 #'
 dropMatrix <- function(matrix, vars) {
