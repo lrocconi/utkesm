@@ -15,7 +15,8 @@
 #' mcar(dat)
 #'
 mcar <- function(x){
-  if(!require(norm)) {
+  # Check whether norm package is installed
+  if(!requireNamespace(norm)) {
     stop("You must have norm installed to use Little's MCAR test")
   }
 

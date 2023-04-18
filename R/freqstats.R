@@ -21,7 +21,7 @@ stats <- function(x) {
     if (is.factor(x)) dat = as.data.frame(rbind(cbind(freq = table(x, useNA="always"),
                                                       prop = prop.table(table(x, useNA="always"))
     ),
-    cbind(sum(complete.cases(x)),
+    cbind(sum(stats::complete.cases(x)),
           (sum(prop.table(table(x, useNA="always"))))-(sum(is.na(x))/((sum(stats::complete.cases(x)))+(sum(is.na(x)))))
     )))
     row.names(dat)[row.names(dat)=="X"] <- "valid"
