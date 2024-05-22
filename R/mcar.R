@@ -12,12 +12,17 @@
 #' @export
 #'
 #' @examples
-#' mcar(dat)
+#' data(iris)
+#' n_rows <- nrow(iris)
+#' row_missing <- sample(1:n_rows, size = .1*n_rows) # sample randomly 10% of rows
+#' iris[row_missing, 1] <- NA
+#' mcar(iris)
+#' mcar(iris)
 #'
 mcar <- function(x){
   # Check whether norm package is installed
-  if(!requireNamespace(norm)) {
-    stop("You must have norm installed to use Little's MCAR test")
+  if(!requireNamespace("norm")) {
+    stop("You must have the `norm` package installed to use Little's MCAR test")
   }
 
   if(!(is.matrix(x) | is.data.frame(x))) {
@@ -49,9 +54,9 @@ mcar <- function(x){
   p <- n.mis.pat-1 # number of Missing Data patterns minus 1 (complete data row)
 
 
-  s <- norm::prelim.norm(x)
-  ll <- norm::em.norm(s)
-  fit <- norm::getparam.norm(s = s, theta = ll)
+  s <- prelim.norm(x)
+  ll <- em.norm(s)
+  fit <- getparam.norm(s = s, theta = ll)
 
   # gmean<-mlest(x)$muhat #ML estimate of grand mean (assumes Normal dist)
   gmean <- fit$mu
@@ -100,7 +105,7 @@ mcar <- function(x){
   }
 
   #p-value for chi-square
-  p.value<-1-stats::pchisq(d2,df)
+  p.value<-1-pchisq(d2,df)
 
   #descriptives of missing data
   amount.missing <- matrix(nmis, 1, length(nmis))

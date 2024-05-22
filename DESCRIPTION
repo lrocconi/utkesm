@@ -1,5 +1,5 @@
 Package: utkesm
-Title: R Package for The University of Tennessee's Evaluation, Statistics, and Methodology program
+Title: R Package for The University of Tennessee, Knoxville's Evaluation, Statistics, and Methodology program
 Version: 0.0.1
 Authors@R: 
     c(person(given = "Louis",
@@ -21,3 +21,6 @@ RoxygenNote: 7.2.3
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
+Imports: 
+    norm,
+    reshape2
