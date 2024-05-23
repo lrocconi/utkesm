@@ -20,9 +20,9 @@
 #' mcar(iris)
 #'
 mcar <- function(x){
-  # Check whether norm package is installed
-  if(!requireNamespace("norm")) {
-    stop("You must have the `norm` package installed to use Little's MCAR test")
+  # Check whether lavaan package is installed
+  if(!requireNamespace("lavaan")) {
+    stop("You must have the `lavaan` package installed to use Little's MCAR test")
   }
 
   if(!(is.matrix(x) | is.data.frame(x))) {
@@ -54,14 +54,18 @@ mcar <- function(x){
   p <- n.mis.pat-1 # number of Missing Data patterns minus 1 (complete data row)
 
 
-  s <- prelim.norm(x)
-  ll <- em.norm(s)
-  fit <- getparam.norm(s = s, theta = ll)
+  # s <- prelim.norm(x)
+  # ll <- em.norm(s)
+  # fit <- getparam.norm(s = s, theta = ll)
+
+  #imp <- mice::mice(x, m = 1, method = "norm", seed = 1234)
+
+  fit <- lavaan::lavCor(as.data.frame(x), missing = "ml", output = "fit")
 
   # gmean<-mlest(x)$muhat #ML estimate of grand mean (assumes Normal dist)
-  gmean <- fit$mu
+  gmean <- lavaan::lavInspect(fit, what = "mean.ov")
   # gcov<-mlest(x)$sigmahat #ML estimate of grand covariance (assumes Normal dist)
-  gcov <- fit$sigma
+  gcov <- lavaan::lavInspect(fit, what = "cov.ov")
   colnames(gcov) <- rownames(gcov) <- colnames(x)
 
   #recode MisPat variable to go from 1 through n.mis.pat
@@ -90,7 +94,7 @@ mcar <- function(x){
 
   #Little's chi-square
   d2<-0
-  cat("this could take a while")
+  #cat("this could take a while")
 
   # this crashes at the missingness pattern where every column is missing
   # this for-loop can be handled faster with plyr-function
