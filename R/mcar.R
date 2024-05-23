@@ -118,11 +118,19 @@ mcar <- function(x){
   colnames(amount.missing) <- var.names
   rownames(amount.missing) <- c("Number Missing", "Percent Missing")
 
-  list(chi.square = d2,
-       df = df,
-       p.value = p.value,
-       missing.patterns = n.mis.pat,
-       amount.missing = amount.missing,
-       data = datasets)
+
+
+  # Create the result object
+  result <- list(chi.square = d2,
+                 df = df,
+                 p.value = p.value,
+                 missing.patterns = n.mis.pat,
+                 amount.missing = amount.missing,
+                 data = datasets)
+
+  return(result)
 }
+
+
+
 "mcar"
