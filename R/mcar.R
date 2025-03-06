@@ -1,6 +1,6 @@
 #' Little's Formal MCAR Test
 #'
-#' @param x Data frame
+#' @param x A provided data frame
 #'
 #' @return Returns test statistics for Little's MCAR test
 #'
